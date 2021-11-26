@@ -9,11 +9,11 @@ let persolanMovieDB = {
     privat: false
 };
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцените его?',''),
-      c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцените его?','');
-persolanMovieDB.movies[a] = b;
-persolanMovieDB.movies[c] = d;
+
+for (let index = 0; index < persolanMovieDB.count; index++) {
+    const a = prompt("Какой Фильм вы посмотрели?", ""),
+          b = prompt("Дайте оценку фильму", "");
+    persolanMovieDB.movies[a] = b;
+}
 
 console.log(persolanMovieDB);
